@@ -1,0 +1,136 @@
+Code And Output Screen:
+print("---------------------------------------------------")
+print("          Welcome to the Medical Chatbot")
+print("---------------------------------------------------")
+print("Hello! I am your virtual medical assistant.")
+print("You can tell me your symptoms, and I will try to guide you.")
+print("Type 'exit' anytime to end the chat.\n")
+
+while True:
+    user_input = input("You: ").strip().lower()
+
+    if user_input == "exit":
+        print("Chatbot: Take care! Stay healthy and safe.")
+        break
+
+    # ----------------------- FEVER RELATED -----------------------
+    elif "fever" in user_input or "temperature" in user_input or "chills" in user_input or "hot" in user_input:
+        print("Chatbot: It seems you might have a fever. Drink plenty of water and rest.")
+        print("Chatbot: Try to check your temperature with a thermometer every few hours.")
+        print("Chatbot: If it is above 38C for more than 2 days, consult a doctor.")
+        print("Chatbot: Avoid cold drinks and wear light clothes to help your body cool down.")
+        print("Chatbot: Do you also have a sore throat or cough along with fever?")
+
+    # ----------------------- COLD / COUGH -----------------------
+    elif "cough" in user_input or "cold" in user_input or "sneeze" in user_input or "sneezing" in user_input:
+        print("Chatbot: You might be having a common cold. Stay hydrated and wear a mask to avoid spreading it.")
+        print("Chatbot: Try drinking warm liquids like soup or tea.")
+        print("Chatbot: Avoid ice creams or chilled beverages.")
+        print("Chatbot: If you have difficulty breathing or a high fever, it might be something more serious.")
+        print("Chatbot: You can also inhale steam to relieve congestion.")
+
+    # ----------------------- HEADACHE / MIGRAINE -----------------------
+    elif "headache" in user_input or "pain" in user_input or "migraine" in user_input or "head hurts" in user_input:
+        print("Chatbot: Try to rest in a quiet, dark place.")
+        print("Chatbot: Headaches can be caused by dehydration, stress, or lack of sleep.")
+        print("Chatbot: Drink some water and relax your eyes by looking away from screens.")
+        print("Chatbot: If headaches happen often, it might be good to visit a doctor.")
+        print("Chatbot: Do you also feel dizzy or sensitive to light? That can be a migraine symptom.")
+
+    # ----------------------- STOMACH ISSUES -----------------------
+    elif "stomach" in user_input or "nausea" in user_input or "vomit" in user_input or "diarrhea" in user_input or "indigestion" in user_input:
+        print("Chatbot: You may be experiencing stomach issues.")
+        print("Chatbot: Avoid spicy or oily food and drink clean, filtered water.")
+        print("Chatbot: Eat light food like rice, bananas, or toast.")
+        print("Chatbot: If vomiting continues, you might need oral rehydration solution (ORS).")
+        print("Chatbot: Persistent stomach pain can be a sign of infection or gastritis - consult a doctor if it lasts more than 2 days.")
+
+    # ----------------------- FATIGUE / TIREDNESS -----------------------
+    elif "tired" in user_input or "fatigue" in user_input or "weak" in user_input or "sleepy" in user_input:
+        print("Chatbot: You might be low on energy. Get enough sleep and eat a balanced diet.")
+        print("Chatbot: Try having fruits like bananas and apples - they give natural energy.")
+        print("Chatbot: Fatigue can also be caused by stress, lack of sleep, or anemia.")
+        print("Chatbot: Do you feel tired after eating? That can mean your body needs more rest.")
+        print("Chatbot: Make sure you drink enough water during the day.")
+
+    # ----------------------- COVID RELATED -----------------------
+    elif "covid" in user_input or "corona" in user_input or "virus" in user_input:
+        print("Chatbot: If you suspect COVID-19, isolate immediately and get tested.")
+        print("Chatbot: Symptoms may include fever, cough, loss of taste or smell, and body ache.")
+        print("Chatbot: Avoid contact with others and wear a mask.")
+        print("Chatbot: Contact local health authorities for testing and guidance.")
+        print("Chatbot: Keep monitoring your oxygen level if you feel breathless.")
+
+    # ----------------------- SKIN ISSUES -----------------------
+    elif "rash" in user_input or "itch" in user_input or "acne" in user_input or "pimple" in user_input or "skin" in user_input:
+        print("Chatbot: You seem to have a skin-related issue.")
+        print("Chatbot: Avoid scratching or touching the area too much.")
+        print("Chatbot: Keep your skin clean and use mild soap.")
+        print("Chatbot: If you have a rash with fever, it might need medical attention.")
+        print("Chatbot: Drink enough water and eat foods rich in vitamins for healthy skin.")
+
+    # ----------------------- EYE PROBLEMS -----------------------
+    elif "eye" in user_input or "vision" in user_input or "blur" in user_input or "itchy eyes" in user_input:
+        print("Chatbot: You might be having eye strain or irritation.")
+        print("Chatbot: Avoid looking at bright screens for long periods.")
+        print("Chatbot: Wash your eyes with clean water and rest them for a while.")
+        print("Chatbot: If your eyes are red or painful, it could be an infection - consult a doctor.")
+        print("Chatbot: Use proper lighting when reading or using devices.")
+
+    # ----------------------- THROAT PAIN -----------------------
+    elif "throat" in user_input or "sore" in user_input or "tonsil" in user_input:
+        print("Chatbot: A sore throat could be due to infection or dryness.")
+        print("Chatbot: Gargle with warm salt water to soothe your throat.")
+        print("Chatbot: Drink warm liquids like honey tea or soup.")
+        print("Chatbot: Avoid shouting or talking too loudly.")
+        print("Chatbot: If it lasts more than 3 days or with fever, consult a doctor.")
+
+    # ----------------------- CHEST PAIN -----------------------
+    elif "chest" in user_input or "heart pain" in user_input or "breath" in user_input or "breathing" in user_input:
+        print("Chatbot: Chest pain can be serious. Please don't ignore it.")
+        print("Chatbot: If you feel tightness, dizziness, or shortness of breath, seek emergency help immediately.")
+        print("Chatbot: It might be muscle strain, but better to be sure.")
+        print("Chatbot: Try sitting upright and taking deep breaths.")
+        print("Chatbot: Do not lie flat if you feel any pressure on your chest.")
+
+    # ----------------------- BACK / BODY PAIN -----------------------
+    elif "back pain" in user_input or "shoulder" in user_input or "neck pain" in user_input or "joint" in user_input:
+        print("Chatbot: It sounds like you might have muscle or joint pain.")
+        print("Chatbot: Try gentle stretching or apply a warm compress.")
+        print("Chatbot: Maintain a good posture while sitting or using your phone.")
+        print("Chatbot: Avoid lifting heavy objects.")
+        print("Chatbot: If pain continues for days, you should consult a doctor.")
+
+    # ----------------------- EAR PROBLEMS -----------------------
+    elif "ear" in user_input or "hearing" in user_input or "ringing" in user_input:
+        print("Chatbot: Ear pain or ringing could be due to infection or wax buildup.")
+        print("Chatbot: Avoid inserting anything into your ear.")
+        print("Chatbot: If the pain is sharp or you have fever, see a doctor soon.")
+        print("Chatbot: Keep your ears dry and avoid loud noises.")
+
+    # ----------------------- SLEEP ISSUES -----------------------
+    elif "sleep" in user_input or "insomnia" in user_input or "cant sleep" in user_input or "night" in user_input:
+        print("Chatbot: Sleep problems can come from stress or irregular routine.")
+        print("Chatbot: Try to sleep at the same time every night.")
+        print("Chatbot: Avoid caffeine or screens before bed.")
+        print("Chatbot: Listen to calm music or take deep breaths before sleeping.")
+        print("Chatbot: If it continues, talk to a doctor to check for sleep disorders.")
+
+    # ----------------------- MOOD / STRESS -----------------------
+    elif "stress" in user_input or "sad" in user_input or "depressed" in user_input or "anxiety" in user_input or "angry" in user_input:
+        print("Chatbot: Mental health is just as important as physical health.")
+        print("Chatbot: Try taking breaks, meditating, or doing something you enjoy.")
+        print("Chatbot: Talk to a friend or family member about how you feel.")
+        print("Chatbot: If these feelings persist, it is okay to seek help from a counselor.")
+        print("Chatbot: Remember, you are not alone, and help is available.")
+
+    # ----------------------- GENERIC CATCH-ALL -----------------------
+    else:
+        print("Chatbot: I'm still learning. Please describe your symptoms more clearly or type 'exit' to quit.")
+        print("Chatbot: You can mention things like 'fever', 'headache', 'cough', or 'stomach pain'.")
+        print("Chatbot: I will do my best to guide you with basic health advice.")
+        print("Chatbot: If it is something serious or an emergency, contact a healthcare professional immediately.")
+
+print("---------------------------------------------------")
+print("End of Chat Session")
+print("---------------------------------------------------")
